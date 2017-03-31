@@ -1,0 +1,32 @@
+body {
+    font-family: 'Muli', sans-serif;
+}
+
+@media (max-width: 767px) {
+    .navlogo {
+    width: 80%;
+    margin-top: -5px;
+    }
+    .navbar-toggle {
+        margin-top: -25px;
+        margin-bottom: 20px;
+    }
+    .navbar-collapse {
+        margin-top: 35px;
+    }
+}
+
+.navbar-default {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #fff;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #4f8391;
