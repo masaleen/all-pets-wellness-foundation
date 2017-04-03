@@ -1,19 +1,85 @@
 body {
     font-family: 'Lato', sans-serif;
+    color: #112136;
+    padding-top: 85px;
 }
 
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
+  font-family: 'Libre Baskerville', serif;
+}
+
+.body-text-link > a{
+    text-decoration: none;
+    color: #112136;
+}
+
+.body-text-link > a:hover{
+    text-decoration: underline;
+    color: #112136;
+}
+
+.padding-remove {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+/* NEW BUTTON STYLES */
+.btn {
+  font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.btn-primary {
+  background-color: #715ca1;
+  border-color: #645092;
+}
+.btn-primary:focus,
+.btn-primary.focus {
+  color: #fff;
+  background-color: #645092;
+  border-color: #574484;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #645092;
+  border-color: #574484;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #645092;
+  border-color: #574484;
+}
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus {
+  background-color: #574484;
+  border-color: #493770;
+}
+
+/* END NEW BUTTON STYLES */
+
+/* ALL MAX WIDTH 767 MOBILE SIZE STYLE CHANGES */
 @media (max-width: 767px) {
     .navlogo {
-    width: 80%;
+    width: 70%;
     margin-top: -5px;
     margin-left: -15px;
     }
     .navbar-toggle {
-        margin-top: -25px;
-        margin-bottom: 20px;
+        margin-top: -35px;
+        margin-bottom: 15px;
     }
     .navbar-collapse {
-        margin-top: 35px;
+        margin-top: 30px;
         background-color: #715ca1;
     }
     
@@ -49,7 +115,7 @@ body {
         color: #555;
         background-color: #8b7ab2;
     }
-    
+
     /* DROPDOWN SUBMENU */
 
 .dropdown-submenu {
@@ -96,7 +162,92 @@ body {
     
     /* END DROPDOWN SUBMENU */
     
+    
+.img-caption {  
+  background:url('../images/dog-pitbull-750-2.jpg') no-repeat center top;
+  position:relative;
+  width:100%;
+  height:100%;
+  background-size:100% auto;
+  padding: 25px 10px 50px 10px;
+  text-align: center;
+  color: #fff;
 }
+
+h1, .h1 {
+  font-size: 30px;
+    }
+
+ /* IMAGES MENU */ 
+    
+.img-menu {
+  text-align: center;
+  width:100%;
+  height:100%;
+    }
+    
+.img-menu a h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+    }
+    
+.img-menu a h1:hover {
+  color: #b8bfdc;
+  text-decoration: none;
+    }
+    
+.img-menu-1 {
+  background:url('../images/dog-bulldog-750.jpg') no-repeat top;
+  position:relative;
+  background-size:100% auto;
+  padding: 40px 10px 50px 10px;
+    }   
+    
+.img-menu-2 {
+  background:url('../images/cat-brown-750.jpg') no-repeat top;
+  position:relative;
+  background-size:100% auto;
+  padding: 40px 10px 50px 10px;
+    }   
+    
+.img-menu-3 {
+  background:url('../images/vet-dog-750-sepia.jpg') no-repeat top;
+  position:relative;
+  background-size:100% auto;
+  padding: 40px 10px 50px 10px;
+    } 
+    
+.img-menu-4 {
+  background:url('../images/rabbit-gray-750.jpg') no-repeat top;
+  position:relative;
+  background-size:100% auto;
+  padding: 40px 10px 50px 10px;
+    }   
+    
+
+/* END IMAGES MENU */
+
+}
+
+/* END ALL MAX WIDTH 767 MOBILE SIZE STYLE CHANGES */
+
+/* ALL MAX WIDTH 320 MOBILE SIZE STYLE CHANGES */
+
+@media (max-width: 320px) {
+    
+.img-caption {
+    padding: 5px 10px 20px 10px;
+    }
+.img-caption > h1 {
+        font-size: 24px;
+    }
+}
+
+/* END ALL MAX WIDTH 767 MOBILE SIZE STYLE CHANGES */
+
 
 .navbar-default {
   background-color: #fff;
@@ -112,4 +263,10 @@ body {
 
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #4f8391;
+}
+
+.navbar-toggle .icon-bar {
+  width: 35px;
+  height: 5px;
+  border-radius: 3px;
 }
