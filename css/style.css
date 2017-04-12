@@ -80,54 +80,13 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 /* END NEW BUTTON STYLES */
 
 
-/* ALL MAX WIDTH 320 DESKTOP SIZE STYLE CHANGES */
-@media (max-width: 320px) {
-.navlogo {
-    width: 75%;
-    } 
-    
-.img-caption {
-    padding: 5px 10px 20px 10px;
-    }
-.img-caption > h1 {
-        font-size: 24px;
-    }
-    
-.img-caption p {
-        font-size: 12.5px;
-    }
-
-.img-menu {
-  padding-bottom: 285px;
-    }
-    
-.img-menu a h1 {
-  font-size: 24px;
-  font-weight: bold;
-  color: #fff;
-  text-decoration: none;
-    }
-
-.img-menu-1, .img-menu-2, .img-menu-3, .img-menu-4 {
-    padding: 35px 10px 35px 10px;
+.col-sm-4 {
+    padding: 0;
 }
-    
-.img-donate {  
-  padding: 8px 10px 15px 10px;
-  margin-bottom: 30px;
-}
-    
-.img-donate > h1 {
-  font-size: 34px;
-  letter-spacing: 1px;
-  line-height: 30px;
-    }
-}
-/* END ALL MAX WIDTH 320 SIZE STYLE CHANGES */   
 
 
 
-/* ALL WIDTH 150 - 576 SIZE STYLE CHANGES */
+/* ALL WIDTH 150 - 767 SIZE STYLE CHANGES */
 @media (min-width: 150px) and (max-width: 767px) {
 .navlogo {
     width: 70%;
@@ -249,7 +208,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
   padding: 15px 10px 30px 10px;
   text-align: center;
   color: #fff;
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 h1, .h1 {
@@ -334,7 +293,56 @@ h1, .h1 {
     }
         
 }
-/* END ALL WIDTH 150 - 576 SIZE STYLE CHANGES */
+/* END ALL WIDTH 150 - 767 SIZE STYLE CHANGES */
+
+
+
+
+/* ALL MAX WIDTH 320 DESKTOP SIZE STYLE CHANGES */
+@media (max-width: 320px) {
+.navlogo {
+    width: 75%;
+    } 
+    
+.img-caption {
+    padding: 5px 10px 20px 10px;
+    }
+.img-caption > h1 {
+        font-size: 24px;
+    }
+    
+.img-caption p {
+        font-size: 12.5px;
+    }
+
+.img-menu {
+  padding-bottom: 285px;
+    }
+    
+.img-menu a h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+    }
+
+.img-menu-1, .img-menu-2, .img-menu-3, .img-menu-4 {
+    padding: 35px 10px 35px 10px;
+}
+    
+.img-donate {  
+  padding: 8px 10px 15px 10px;
+  margin-bottom: 30px;
+}
+    
+.img-donate > h1 {
+  font-size: 34px;
+  letter-spacing: 1px;
+  line-height: 30px;
+    }
+}
+/* END ALL MAX WIDTH 320 SIZE STYLE CHANGES */   
+
 
 
 
@@ -347,14 +355,34 @@ h1, .h1 {
 }
 /* END ALL WIDTH 420 - 480 SIZE STYLE CHANGES */
 
+
+
+
 /* ALL WIDTH 480 - 576 SIZE STYLE CHANGES */
 @media (min-width: 480px) and (max-width: 557px) {
 .navlogo {
     width: 60%;
     margin-top: -10px;
     }   
+.img-caption > p {
+    margin-right: 40px;
+    margin-left: 40px;
+    font-size: 16px;
+    }  
 }
 /* END ALL WIDTH 480 - 557 SIZE STYLE CHANGES */
+
+
+
+
+/* ALL WIDTH 480 - 767 SIZE STYLE CHANGES */
+@media (min-width: 480px) and (max-width: 767px) {
+
+.img-menu a h1 {
+  font-size: 40px;
+    }
+
+}
 
 
 /* ALL WIDTH 558 - 576 SIZE STYLE CHANGES */
@@ -366,12 +394,17 @@ h1, .h1 {
     
     .navbar-toggle {
         margin: 15px 0 15px 0;
+} 
+    .img-caption > p {
+    margin-right: 40px;
+    margin-left: 40px;
+    font-size: 16px;
+    }  
 }
-}
-/* END ALL WIDTH 480 - 557 SIZE STYLE CHANGES */
+/* END ALL WIDTH 558 - 576 SIZE STYLE CHANGES */
 
 
-/* ALL MIN WIDTH 577 SIZE STYLE CHANGES */
+/* ALL WIDTH 577 - 767 SIZE STYLE CHANGES */
 @media (min-width: 577px) and (max-width: 767px) {
 .navlogo {
     width: 60%;
@@ -381,10 +414,24 @@ h1, .h1 {
 .navbar-toggle {
     margin: 15px 10px 15px 0;
     }
-    
-  
+.img-caption {  
+  background:url('../images/dog-pitbull-750-2.jpg') no-repeat center top;
+  position:relative;
+  width:100%;
+  height:100%;
+  background-size:100% auto;
+  padding: 35px 10px 60px 10px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
 }
-/* END ALL MIN WIDTH 577 SIZE STYLE CHANGES */
+.img-caption > p {
+    margin-right: 40px;
+    margin-left: 40px;
+    font-size: 18px;
+    }    
+}
+/* END ALL WIDTH 577 - 767 SIZE STYLE CHANGES */
 
 
 
@@ -415,56 +462,175 @@ h1, .h1 {
     color: #1d477e;
     }   
 
-    .dropdown-menu>.menu-item>a{
-        color: #fff;
-        font-size: 14px;
-        letter-spacing: .5px;
+.dropdown-menu>.menu-item>a{
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: .5px;
     }  
-    .dropdown-menu>.menu-item>a:hover{
-        color: #fff;  
-        font-weight: bold;
-        letter-spacing: 1px;
+.dropdown-menu>.menu-item>a:hover{
+    color: #fff;  
+    font-weight: bold;
+    letter-spacing: 1px;
     }
-    .dropdown-menu {
-        background-color: #27548f;
+.dropdown-menu {
+    background-color: #27548f;
     }
-    .dropdown-menu>.menu-item>a:hover{
-        background-color: #1d477e;
+.dropdown-menu>.menu-item>a:hover{
+    background-color: #1d477e;
     }
-    .dropdown-submenu>.dropdown-menu {
+.dropdown-submenu>.dropdown-menu {
     left:100%;
     margin-left:-115px;
 }
     
+.img-caption {  
+  background:url('../images/dog-pitbull-1200.jpg') no-repeat center top;
+  position:relative;
+  width:100%;
+  height:100%;
+  background-size:100% auto;
+  padding: 30px 35px 55px 10px;
+  text-align: right;
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.img-caption>h1{
+  font-size: 28px;
+    }
+.img-caption>p{
+  font-size: 16px;
+  margin-left: 250px;
+    }
+
+.img-left {
+    padding-right: 15px;
+}    
+    
+/* IMAGES MENU */ 
+    
+.img-menu {
+  text-align: center;
+  width:100%;
+  height:100%;
+  padding-bottom: 400px;
+    padding-top: 25px;
+    }
+    
+.img-menu a h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+    }
+
+.img-menu-1 {
+  background:url('../images/dog-bulldog-750.jpg') no-repeat top;
+  position:relative;
+  background-size:100% auto;
+  padding: 50px 20px  70px 20px ;
+    }   
+    
+.img-menu-2 {
+  background:url('../images/cat-brown-750.jpg') no-repeat top;
+  position:relative;
+  background-size:100% auto;
+  padding: 50px 20px 70px 20px ;
+    }   
+    
+.img-menu-3 {
+  background:url('../images/vet-dog-750-sepia.jpg') no-repeat top;
+  position:relative;
+  background-size:100% auto;
+  padding: 50px 0 70px 0;
+    } 
+    
+.img-menu-4 {
+  background:url('../images/rabbit-gray-750.jpg') no-repeat top;
+  position:relative;
+  background-size:100% auto;
+  padding: 50px 0 70px 0;
+    }   
+    
+
+/* END IMAGES MENU */
 
 }
 /* END ALL MIN WIDTH 768 SIZE STYLE CHANGES */  
 
 
 
+
+
+/* ALL MAX WIDTH 992 SIZE STYLE CHANGES */
+@media (max-width: 992px) {
+    .hidden-sm {
+        display: none;
+    }
+}
+/* END ALL MAX WIDTH 992 SIZE STYLE CHANGES */
+
+
+
+
 /* ALL MIN WIDTH 992 SIZE STYLE CHANGES */
 @media (min-width: 992px) {
 .navlogo {
-    width: 70%;
-    margin-top: -10px;
+  width: 70%;
+  margin-top: -10px;
     }    
     
 .navbar-default .navbar-nav>li>a {
-    color: #27548f;
-    font-weight: bold;
-    font-size: 18px;
-    padding-left: 10px;
+  color: #27548f;
+  font-weight: bold;
+  font-size: 18px;
+  padding-left: 10px;
     }    
 .navbar-nav>li>a {
-    padding-top: 35px;  
-    margin-top: 0;
-    padding-bottom: 35px;
+  padding-top: 35px;  
+  margin-top: 0;
+  padding-bottom: 35px;
     }    
 .dropdown-menu>.menu-item>a{
-    font-size: 16px;
+  font-size: 16px;
     }
-
+.img-caption {  
+  background:url('../images/dog-pitbull-1200-2.jpg') no-repeat center top;
+  position:relative;
+  width:100%;
+  height:100%;
+  background-size:100% auto;
+  padding: 55px 35px 50px 10px;
+  text-align: right;
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
+.img-caption>h1{
+  font-size: 36px;
+    }
+.img-caption>p{
+  font-size: 20px;
+  margin-left: 500px;
+    }
+.img-caption >.btn {
+  font-size: 26px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.body-text-link h3 {
+  font-size: 30px;     
+    }
+.body-text-link p {
+  font-size: 16px;     
+    }
+    
+.img-menu a h1 {
+  font-size: 40px;
+    }
+}        
 /* END ALL MIN WIDTH 992 SIZE STYLE CHANGES */    
 
 
@@ -487,11 +653,26 @@ h1, .h1 {
     margin-top: -20px;
     padding-bottom: 35px;
     }    
-
+.img-caption>p{
+  font-size: 20px;
+  margin-left: 400px;
+    }
+    
 }
 /* END WIDTH 992 - 1199 SIZE STYLE CHANGES */   
 
 
+/* ALL MIN WIDTH 1200 SIZE STYLE CHANGES */
+@media (min-width: 1200px) {
+.body-text-link p {
+  font-size: 18px;
+    }
+.img-menu a h1 {
+  font-size: 50px;
+    }    
+    
+
+}
 /* FOOTER */
 
 .social-media{
