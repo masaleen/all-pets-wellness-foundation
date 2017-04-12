@@ -30,6 +30,10 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
         padding-left: 0;
         padding-right: 0;
     }
+    
+.navbar-default {
+  background-color: #fff;
+}
 
 /* NEW BUTTON STYLES */
 .btn {
@@ -75,19 +79,65 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 
 /* END NEW BUTTON STYLES */
 
-/* ALL MAX WIDTH 767 MOBILE SIZE STYLE CHANGES */
-@media (max-width: 767px) {
-    .navlogo {
+
+/* ALL MAX WIDTH 320 DESKTOP SIZE STYLE CHANGES */
+@media (max-width: 320px) {
+.navlogo {
+    width: 75%;
+    } 
+    
+.img-caption {
+    padding: 5px 10px 20px 10px;
+    }
+.img-caption > h1 {
+        font-size: 24px;
+    }
+    
+.img-caption p {
+        font-size: 12.5px;
+    }
+
+.img-menu {
+  padding-bottom: 285px;
+    }
+    
+.img-menu a h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+    }
+
+.img-menu-1, .img-menu-2, .img-menu-3, .img-menu-4 {
+    padding: 35px 10px 35px 10px;
+}
+    
+.img-donate {  
+  padding: 8px 10px 15px 10px;
+  margin-bottom: 30px;
+}
+    
+.img-donate > h1 {
+  font-size: 34px;
+  letter-spacing: 1px;
+  line-height: 30px;
+    }
+}
+/* END ALL MAX WIDTH 320 SIZE STYLE CHANGES */   
+
+
+
+/* ALL WIDTH 150 - 576 SIZE STYLE CHANGES */
+@media (min-width: 150px) and (max-width: 767px) {
+.navlogo {
     width: 70%;
-    margin-top: -5px;
-    margin-left: -15px;
+    margin-top: -3PX;
     }
     .navbar-toggle {
-        margin-top: -35px;
-        margin-bottom: 15px;
+        margin: -35px 0 15px 0;
     }
     .navbar-collapse {
-        margin-top: 30px;
+        margin-top: 75px;
         background-color: #715ca1;
     }
     
@@ -123,6 +173,25 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
         color: #555;
         background-color: #8b7ab2;
     }
+
+
+.navbar-default .navbar-toggle {
+  border-color: #fff;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #4f8391;
+}
+
+.navbar-toggle .icon-bar {
+  width: 35px;
+  height: 5px;
+  border-radius: 3px;
+}
 
     /* DROPDOWN SUBMENU */
 
@@ -263,77 +332,167 @@ h1, .h1 {
   letter-spacing: 3px;
   line-height: 38px;
     }
-    
+        
 }
-/* END ALL MAX WIDTH 767 MOBILE SIZE STYLE CHANGES */
+/* END ALL WIDTH 150 - 576 SIZE STYLE CHANGES */
 
 
-/* ALL MAX WIDTH 320 MOBILE SIZE STYLE CHANGES */
 
-@media (max-width: 320px) {
+/* ALL WIDTH 420 - 480 SIZE STYLE CHANGES */
+@media (min-width: 420px) and (max-width: 480px) {
+.navlogo {
+    width: 70%;
+    margin-top: -10px;
+    }   
+}
+/* END ALL WIDTH 420 - 480 SIZE STYLE CHANGES */
+
+/* ALL WIDTH 480 - 576 SIZE STYLE CHANGES */
+@media (min-width: 480px) and (max-width: 557px) {
+.navlogo {
+    width: 60%;
+    margin-top: -10px;
+    }   
+}
+/* END ALL WIDTH 480 - 557 SIZE STYLE CHANGES */
+
+
+/* ALL WIDTH 558 - 576 SIZE STYLE CHANGES */
+@media (min-width: 558px) and (max-width: 576px) {
+.navlogo {
+    width: 60%;
+    margin-top: -10px;
+    }   
     
-.img-caption {
-    padding: 5px 10px 20px 10px;
+    .navbar-toggle {
+        margin: 15px 0 15px 0;
+}
+}
+/* END ALL WIDTH 480 - 557 SIZE STYLE CHANGES */
+
+
+/* ALL MIN WIDTH 577 SIZE STYLE CHANGES */
+@media (min-width: 577px) and (max-width: 767px) {
+.navlogo {
+    width: 60%;
+    margin-top: -10px;
+    }    
+
+.navbar-toggle {
+    margin: 15px 10px 15px 0;
     }
-.img-caption > h1 {
-        font-size: 24px;
-    }
     
-.img-caption p {
-        font-size: 12.5px;
+  
+}
+/* END ALL MIN WIDTH 577 SIZE STYLE CHANGES */
+
+
+
+
+/* ALL MIN WIDTH 768 SIZE STYLE CHANGES & START OF DESKTOP MENU*/
+@media (min-width: 768px) {
+.navlogo {
+    width: 55%;
+    margin-top: -10px;
+    }    
+    
+.navbar-default .navbar-nav>li>a {
+    color: #27548f;
+    font-weight: bold;
+    font-size: 14px;
+    padding-left: 2px;
+    }  
+.navbar-default .navbar-nav>li>a:hover {
+    color: #1b3d69;
+    } 
+.navbar-nav>li>a {
+    padding-top: 0;  
+    margin-top: -20px;
+    padding-bottom: 25px;
+    }    
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+     background-color: #fff;
+    color: #1d477e;
+    }   
+
+    .dropdown-menu>.menu-item>a{
+        color: #fff;
+        font-size: 14px;
+        letter-spacing: .5px;
+    }  
+    .dropdown-menu>.menu-item>a:hover{
+        color: #fff;  
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+    .dropdown-menu {
+        background-color: #27548f;
+    }
+    .dropdown-menu>.menu-item>a:hover{
+        background-color: #1d477e;
+    }
+    .dropdown-submenu>.dropdown-menu {
+    left:100%;
+    margin-left:-115px;
+}
+    
+
+}
+/* END ALL MIN WIDTH 768 SIZE STYLE CHANGES */  
+
+
+
+/* ALL MIN WIDTH 992 SIZE STYLE CHANGES */
+@media (min-width: 992px) {
+.navlogo {
+    width: 70%;
+    margin-top: -10px;
+    }    
+    
+.navbar-default .navbar-nav>li>a {
+    color: #27548f;
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 10px;
+    }    
+.navbar-nav>li>a {
+    padding-top: 35px;  
+    margin-top: 0;
+    padding-bottom: 35px;
+    }    
+.dropdown-menu>.menu-item>a{
+    font-size: 16px;
     }
 
-.img-menu {
-  padding-bottom: 285px;
-    }
+}
+/* END ALL MIN WIDTH 992 SIZE STYLE CHANGES */    
+
+
+
+/* ALL WIDTH 992 - 1199 SIZE STYLE CHANGES */
+@media (min-width: 992px) and (max-width: 1199px) {
+.navlogo {
+    width: 60%;
+    margin-top: -5px;
+    }    
     
-.img-menu a h1 {
-  font-size: 24px;
-  font-weight: bold;
-  color: #fff;
-  text-decoration: none;
-    }
+.navbar-default .navbar-nav>li>a {
+    color: #27548f;
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 5px;
+    }    
+.navbar-nav>li>a {
+    padding-top: 0;  
+    margin-top: -20px;
+    padding-bottom: 35px;
+    }    
 
-.img-menu-1, .img-menu-2, .img-menu-3, .img-menu-4 {
-    padding: 35px 10px 35px 10px;
 }
-    
-.img-donate {  
-  padding: 8px 10px 15px 10px;
-  margin-bottom: 30px;
-}
-    
-.img-donate > h1 {
-  font-size: 34px;
-  letter-spacing: 1px;
-  line-height: 30px;
-    }
-    
-}
-/* END ALL MAX WIDTH 320 MOBILE SIZE STYLE CHANGES */
+/* END WIDTH 992 - 1199 SIZE STYLE CHANGES */   
 
 
-.navbar-default {
-  background-color: #fff;
-}
-
-.navbar-default .navbar-toggle {
-  border-color: #fff;
-}
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-  background-color: #fff;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #4f8391;
-}
-
-.navbar-toggle .icon-bar {
-  width: 35px;
-  height: 5px;
-  border-radius: 3px;
-}
+/* FOOTER */
 
 .social-media{
   text-align: center;
@@ -352,3 +511,5 @@ h1, .h1 {
     color: #5E6B7B;
     margin-bottom: 15px;
 }
+
+/* END FOOTER */
