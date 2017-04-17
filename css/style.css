@@ -2,6 +2,7 @@ body {
     font-family: 'Lato', sans-serif;
     color: #112136;
     padding-top: 85px;
+    font-size: 16px;
 }
 
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
@@ -9,7 +10,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 }
 
 .body-text-link {
-    padding-bottom: 25px;
+    padding-bottom: 30px;
 }
 
 .body-text-link > a{
@@ -33,6 +34,19 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
     
 .navbar-default {
   background-color: #fff;
+}
+
+.centered-h {
+    text-align: center;
+    padding: 15px;
+}
+
+.img-right {
+    float: right;
+}  
+
+.img-padded {
+   margin: 5px;
 }
 
 /* NEW BUTTON STYLES */
@@ -366,6 +380,19 @@ h1, .h1 {
 
 
 
+/* ALL MAX WIDTH 420 SIZE STYLE CHANGES */
+@media (max-width: 420px) {
+
+    .img-full {
+        width: 100%;
+        padding-bottom: 15px;
+    }
+
+}
+
+
+
+
 /* ALL WIDTH 420 - 480 SIZE STYLE CHANGES */
 @media (min-width: 420px) and (max-width: 480px) {
 .navlogo {
@@ -542,6 +569,7 @@ h1, .h1 {
 
 .img-left {
     padding-right: 15px;
+    padding-bottom: 5px;
 }    
     
 /* IMAGES MENU */ 
@@ -613,6 +641,10 @@ h1, .h1 {
   letter-spacing: 3px;
   line-height: 55px;
     }
+    
+.img-donate-about {  
+  margin-top: 40px;
+}
 
 }
 /* END ALL MIN WIDTH 768 SIZE STYLE CHANGES */  
@@ -698,6 +730,10 @@ h1, .h1 {
   font-size: 80px;
   line-height: 75px;
 }
+    
+.img-donate-about {  
+  margin-top: 40px;
+}
 
 }        
 /* END ALL MIN WIDTH 992 SIZE STYLE CHANGES */    
@@ -751,6 +787,9 @@ h1, .h1 {
 .img-donate {  
   padding: 40px 10px 60px 10px;
   margin-top: 570px;
+}
+.img-donate-about {  
+  margin-top: 40px;
 }
 
 }
