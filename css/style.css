@@ -80,9 +80,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 /* END NEW BUTTON STYLES */
 
 
-.col-sm-4 {
-    padding: 0;
-}
+
 
 
 
@@ -308,11 +306,11 @@ h1, .h1 {
     padding: 5px 10px 20px 10px;
     }
 .img-caption > h1 {
-        font-size: 24px;
+        font-size: 20px;
     }
     
 .img-caption p {
-        font-size: 12.5px;
+        font-size: 11px;
     }
 
 .img-menu {
@@ -331,7 +329,7 @@ h1, .h1 {
 }
     
 .img-donate {  
-  padding: 8px 10px 15px 10px;
+  padding: 5px 10px 15px 10px;
   margin-bottom: 30px;
 }
     
@@ -342,6 +340,28 @@ h1, .h1 {
     }
 }
 /* END ALL MAX WIDTH 320 SIZE STYLE CHANGES */   
+
+
+
+
+/* ALL WIDTH 321 - 420 SIZE STYLE CHANGES */
+@media (min-width: 321px) and (max-width: 420px) {
+
+.img-caption {  
+  padding: 2px 10px 20px 10px;
+  margin-bottom: 30px;
+}
+    
+.img-caption > h1 {
+        font-size: 18px;
+    }
+    
+.img-caption p {
+        font-size: 12px;
+    }
+    
+}
+/* END ALL WIDTH 321 - 420 SIZE STYLE CHANGES */
 
 
 
@@ -381,8 +401,13 @@ h1, .h1 {
 .img-menu a h1 {
   font-size: 40px;
     }
-
+.img-menu {
+  padding-bottom: 370px;
+    }
 }
+/* END ALL WIDTH 480 - 767 SIZE STYLE CHANGES */
+
+
 
 
 /* ALL WIDTH 558 - 576 SIZE STYLE CHANGES */
@@ -393,7 +418,7 @@ h1, .h1 {
     }   
     
     .navbar-toggle {
-        margin: 15px 0 15px 0;
+        margin: -30px 0 0 0;
 } 
     .img-caption > p {
     margin-right: 40px;
@@ -429,7 +454,19 @@ h1, .h1 {
     margin-right: 40px;
     margin-left: 40px;
     font-size: 18px;
+    }   
+    
+.img-donate {  
+  padding: 25px 10px 30px 10px;
+  margin-bottom: 30px;
+}
+    
+.img-donate > h1 {
+  font-size: 60px;
+  letter-spacing: 1px;
+  line-height: 50px;
     }    
+
 }
 /* END ALL WIDTH 577 - 767 SIZE STYLE CHANGES */
 
@@ -513,8 +550,8 @@ h1, .h1 {
   text-align: center;
   width:100%;
   height:100%;
-  padding-bottom: 400px;
-    padding-top: 25px;
+  padding-bottom: 220px;
+    padding-top: 0;
     }
     
 .img-menu a h1 {
@@ -555,6 +592,27 @@ h1, .h1 {
     
 
 /* END IMAGES MENU */
+    
+.img-donate {  
+  background:url('../images/dog-dobie-750-2.jpg') no-repeat center top;
+  position:relative;
+  width:100%;
+  height:100%;
+  background-size:100% auto;
+  padding: 30px 10px 40px 10px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+  margin-top: 450px;
+}
+    
+.img-donate > h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  letter-spacing: 3px;
+  line-height: 55px;
+    }
 
 }
 /* END ALL MIN WIDTH 768 SIZE STYLE CHANGES */  
@@ -630,6 +688,17 @@ h1, .h1 {
 .img-menu a h1 {
   font-size: 40px;
     }
+    
+.img-donate {  
+  padding: 40px 10px 60px 10px;
+  margin-top: 510px;
+}
+    
+.img-donate > h1 {  
+  font-size: 80px;
+  line-height: 75px;
+}
+
 }        
 /* END ALL MIN WIDTH 992 SIZE STYLE CHANGES */    
 
@@ -658,6 +727,10 @@ h1, .h1 {
   margin-left: 400px;
     }
     
+.img-menu {
+  padding-bottom: 250px;
+    }
+    
 }
 /* END WIDTH 992 - 1199 SIZE STYLE CHANGES */   
 
@@ -670,9 +743,21 @@ h1, .h1 {
 .img-menu a h1 {
   font-size: 50px;
     }    
-    
+.img-menu {
+  width:100%;
+  height:100%;
+  padding-bottom: 250px;
+    } 
+.img-donate {  
+  padding: 40px 10px 60px 10px;
+  margin-top: 570px;
+}
 
 }
+
+/* END ALL MIN WIDTH 1200 SIZE STYLE CHANGES */
+
+
 /* FOOTER */
 
 .social-media{
